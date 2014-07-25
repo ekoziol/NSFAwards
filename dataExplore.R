@@ -1,5 +1,5 @@
 library(ggmap)
-library(manipulate)
+#library(manipulate)
 nsfd <- read.csv("process/processedData.csv")
 nsfd$fundsMil <- nsfd$funds/1000000
 map <- get_map(location = 'United States', zoom = 4)
