@@ -12,6 +12,6 @@ shinyUI(pageWithSidebar(
       NSF Funding can be seen as a source of upcoming technologies that will likely be in industry in the next 
       5 to 10 years.  Therefore, by viewing the data below, you may be able to predict the location of the next big
       trend.'),
-    plotOutput('nsfMap')
+    plotOutput('nsfMap', height = 800, width = 800)
   )
 ))

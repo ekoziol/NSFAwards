@@ -11,7 +11,8 @@ nsfd$fundsMil <- nsfd$funds/1000000
 y <- 2008
 
 currentMap <- function(y){
-  return(gmap + geom_point(data = nsfd[nsfd$year== y,], aes(x=long, y=lat, color=fundsMil, size=fundsMil), na.rm=TRUE))
+  return(gmap + geom_point(data = nsfd[nsfd$year== y,], aes(x=long, y=lat, color=fundsMil, size=fundsMil), na.rm=TRUE)
+         + scale_colour_gradientn(colours=c("blue","purple","red")))
 }
 
 findCity <- function(z){
