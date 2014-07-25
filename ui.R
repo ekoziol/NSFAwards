@@ -3,7 +3,7 @@ shinyUI(pageWithSidebar(
   headerPanel("National Science Foundation Funding Breakdown"),
   sidebarPanel(
     h3('Select a year'),
-    sliderInput('y', '',value = 2008, min = 2005, max = 2015, step = 1, format="####")
+    sliderInput('y', '',value = 2008, min = 2005, max = 2014, step = 1, format="####")
     
   ),
   mainPanel(
